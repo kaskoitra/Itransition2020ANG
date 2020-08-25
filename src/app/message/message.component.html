@@ -1,0 +1,19 @@
+<div class="container">
+<h3>Contact Form</h3>
+<form action="#" name="contact_form">
+  <label>First Name</label>
+  <input #first_name type="text" required placeholder="John"/>
+  <br>
+  <label>Last Name</label>
+  <input #last_name type="text" required placeholder="Doe"/>
+  <br>
+  <label>Email</label>
+  <input #email type="email" required placeholder="you@domain.com"/>
+  <br>
+  <label>Message</label><br>
+  <textarea #message cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+  <div class="center">
+    <input (click)="logMessage(first_name.value, last_name.value, email.value, message.value)" type="submit" value="Submit">
+  </div>
+</form>
+</div>
