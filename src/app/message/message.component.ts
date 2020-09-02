@@ -16,5 +16,4 @@ export class MessageComponent implements OnInit {
   logMessage(first_name, last_name, email, message){
    this._messageService.logMessage(first_name, last_name, email, message);
   }
-
 }

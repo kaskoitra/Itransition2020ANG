@@ -71,7 +71,7 @@ input[type=submit] {
 
 /* Add styles for 'focus' property */
 input[type=submit]:focus {
-  background: #A5D6A7;
+  background: #424242;
   color: whitesmoke;
 }
 
