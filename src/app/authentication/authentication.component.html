@@ -1,0 +1,11 @@
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+  <div>Itransition<span>2020</span></div>
+</div>
+<br>
+<div class="login">
+  <input type="text" placeholder="username" #username><br>
+  <input type="password" placeholder="password" #password><br>
+  <input (click)="login(username.value, password.value)" type="button" value="Login">
+</div>
