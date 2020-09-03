@@ -1,0 +1,21 @@
+p {
+  color: #999999;
+}
+
+.restriction {
+  position: absolute;
+  min-width: 25%;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.icons {
+  padding-left: 30pc;
+}
+
+.icon{
+  cursor: pointer;
+  padding-right: 1pc;
+}

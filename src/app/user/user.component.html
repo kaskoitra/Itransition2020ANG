@@ -1,1 +1,16 @@
-<p>user works!</p>
+<div class="restriction">
+  <mat-selection-list #users (selectionChange)="setSelectedUsers(users.selectedOptions.selected)">
+    <mat-list-option *ngFor="let user of usersArray" [value]="user">
+      {{user.username}}
+    </mat-list-option>
+  </mat-selection-list>
+
+  <p>
+    Selected users: {{users.selectedOptions.selected.length}}
+    <i class="icons">
+      <fa-icon class="icon" [icon]="lock"></fa-icon>
+      <fa-icon class="icon" [icon]="unlock"></fa-icon>
+      <fa-icon class="icon" (click)="deleteUsers()" [icon]="trash"></fa-icon>
+    </i>
+  </p>
+</div>

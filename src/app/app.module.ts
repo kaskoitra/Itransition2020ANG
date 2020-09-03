@@ -32,6 +32,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatNativeDateModule, MatOptionModule} from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatButtonModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    FontAwesomeModule
   ],
   providers: [
     MessageService,
