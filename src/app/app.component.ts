@@ -16,6 +16,10 @@ export class AppComponent {
     });
   }
 
+  isUserLoggedIn(){
+    return window.localStorage.getItem('token')
+  }
+
   isUserRightsAdmin() {
     return this.message.getUserRights() == "1@1.1";
   }

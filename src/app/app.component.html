@@ -5,10 +5,13 @@
     </button>
     <h1>Itransition2020</h1>
     <span class="menu-spacer"></span>
-    <div>
+    <div *ngIf="!isUserLoggedIn()">
       <a mat-button [routerLink]="'/registeruser'"> Sign Up </a>
       <a mat-button [routerLink]="'/login'"> Sign In </a>
-      <a mat-button [routerLink]="'/contacts'"> Test </a>
+    </div>
+    <div *ngIf="isUserLoggedIn()">
+      <a mat-button [routerLink]="'/login'"> Sign Out </a>
+      <a mat-button [routerLink]="'/user'"> All Users </a>
     </div>
   </mat-toolbar-row>
 
